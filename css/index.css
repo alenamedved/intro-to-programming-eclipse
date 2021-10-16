@@ -72,6 +72,40 @@ main.content {
     background-color: #97c2fa;
     justify-content: center;
 }
+.education_container {
+    background-color: #97c2fa;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly
+
+  /*   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min 350px max 450px;
+    grid-gap: 15px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column; */
+}
+.education_container a {
+    flex: 1;
+    height: auto;
+    text-decoration: none;
+    color: inherit;
+}
+.education_item1,
+.education_item2 {
+    background-color: #fffc;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+    height: 80%;
+    
+}
+.certificate {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
 #experience {
     position: relative;
 }
@@ -155,9 +189,9 @@ h1.heading {
     order: -10;
 }   
 
-a[href^="http"]:visited {
+/* a[href^="http"]:visited {
     color:rgb(74, 99, 7);
-}
+} */
 
 fieldset {
     border-color: #f0ffff;
@@ -356,6 +390,9 @@ footer p {
     main.content {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .education_container {
+        flex-flow: column;
     }
     .flex-cont {
         flex-direction: column;
