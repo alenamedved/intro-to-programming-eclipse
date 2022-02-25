@@ -93,7 +93,8 @@ main.content {
     color: inherit;
 }
 .education_item1,
-.education_item2 {
+.education_item2, 
+.education_item3 {
     background-color: #fffc;
     margin: 1rem;
     padding: 20px;
