@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const skillsSection = document.getElementById("skills");
   const skillsList = skillsSection.querySelector("ul");
   const educationalSecCodeTheDream = document.getElementsByClassName("education_item2")[0];
+  const educationalSecCodeTheDream2 = document.getElementsByClassName("education_item3")[0];
   const certificate = document.getElementsByClassName("certificate")[0];
   const educSectAll = document.getElementsByClassName("education_container")[0];
 
@@ -127,12 +128,23 @@ document.addEventListener("DOMContentLoaded", () => {
     educationalSecCodeTheDream.parentNode.style.backgroundPosition = 'center'
     educationalSecCodeTheDream.parentNode.style.backgroundSize = 'contain'
     educationalSecCodeTheDream.parentNode.style.backgroundRepeat = 'no-repeat'
-    
+  })
+ //add certificat in place of CTD container
+ educationalSecCodeTheDream2.addEventListener("mouseenter", (event) => {
+  educationalSecCodeTheDream2.style.display = "none";
+  educationalSecCodeTheDream2.parentNode.style.backgroundImage = "url('img/certificate-2.png')"
+  educationalSecCodeTheDream2.parentNode.style.backgroundPosition = 'center'
+  educationalSecCodeTheDream2.parentNode.style.backgroundSize = 'contain'
+  educationalSecCodeTheDream2.parentNode.style.backgroundRepeat = 'no-repeat'
+
     /* certificate.style.display = "block"; */
   });
+
   educSectAll.addEventListener("mouseleave", (event) => {
     educationalSecCodeTheDream.parentNode.style.backgroundImage = "none"
+    educationalSecCodeTheDream2.parentNode.style.backgroundImage = "none"
     educationalSecCodeTheDream.style.display = "block";
+    educationalSecCodeTheDream2.style.display = "block";
    /*  certificate.style.display = "none"; */
   });
 
